@@ -1,0 +1,63 @@
+1. Get data from files
+
+Jakie typy plików można zaimportować do Power BI Desktop?
+Można zaimportować miedZYinnymi txt,csv,xslx
+
+Na czym polega różnica między importem danych z pliku Excel a CSV?
+W sumie tylko tym, ze w okienko get data zamiast text/csv klikamy excel.
+2. Get data from relational data sources
+
+Jakie są przykłady relacyjnych źródeł danych obsługiwanych przez Power BI?
+Sá to bazy danych np. oracle,sqlserver,postgresql,mysql
+W jakich sytuacjach warto wybrać DirectQuery zamiast Import?
+W sytuacjach w ktorych zalezy nam na natychmiastowym odswiezaniu zasobow np z bazy danych lub z chmury. Oraz wtedy kiedy chcemy
+oszczedzac zasoby PowerBI bo directquery tworzy polaczenie miedzy power bi a zrodlem danych. A import danych zapisuje
+w pamieci podrecznej powerbi dane
+3. Create dynamic reports with parameters
+
+W jakim celu tworzy się parametry w Power BI?
+Tworzy sie w celu upraszczania pobierania danych np z bazy danych. Nie trzeba pare razy wykonywac tego samego query. mozna podmienic parametr
+Podaj przykład zastosowania parametru w zapytaniu M (Power Query).
+Poprostu dodaje sie odnosnik do parametru w zapytaniu M np na samym koncu query do bazy danych.
+4. Get data from a NoSQL database
+
+Jakie przykłady baz NoSQL możesz podłączyć do Power BI?
+cosmosdb,mongodb
+Czym różni się sposób łączenia z bazą NoSQL od relacyjnej?
+do bazy sql laczymy sie poprzez nazwe bazy danych a do NoSQL przez url.
+5. Get data from online services
+
+Jakie usługi online (SaaS) są najczęściej integrowane z Power BI?
+salesforce,365dynamics,sharepoint
+Jakie kroki trzeba wykonać, aby podłączyć np. dane z SharePointa lub Dynamics 365?
+trzeba kliknac getdata wybrac usluge. do saas'ow podlacza sie poprzez url z odpowiednimi naszymi danymi
+6. Select a storage mode
+
+Jakie są trzy główne tryby przechowywania danych w Power BI?
+import,directquery,dual
+Kiedy warto zastosować Dual mode?
+kiedy potrzebujemy aby czesc danych z danego zrodla byla aktualizowana jak najszybciej, a czesc danych moze byc skopiowana do 
+do modelu powerbi
+7. Get data from Azure Analysis Services
+
+Jak połączyć Power BI z Azure Analysis Services?
+get data, wybieramy connector, podajemy, podajemy nazwe servera
+Jakie są zalety użycia tego źródła danych w porównaniu z lokalnym modelem danych?
+
+8. Fix performance issues
+
+Jakie są najczęstsze przyczyny problemów z wydajnością w Power BI?
+Sa to zbyt duze lub skomplikowane datasety,nieefektowny modele danych, slabe zapytania dax, za duzo visuali
+Jak można zoptymalizować model danych lub zapytania?
+mozna poprawic zapytania, tzn stworzyc indeksy, robic dokladniejsze zapytania, lub juz robic agregacje np w zrodle danych
+9. Resolve data import errors
+
+Jakie typy błędów mogą wystąpić podczas importu danych?
+typow danych, nie mozna znalezc danych sformatowanych jako tabela, nie mozna znalezc pliku, czas na polaczenie uplynal
+Jak rozwiązać problem, gdy kolumna ma różne typy danych w różnych wierszach?
+trzeba w zrodle danych ustandaryzowac typ danych dla tej kolumny
+10. Exercise / Check your knowledge
+
+Opisz krok po kroku proces pobrania danych z pliku Excel, przekształcenia ich w Power Query i załadowania do modelu danych.
+get data, excel, ladujemy docelowe tabele, sprawdzamy typy danych w kolumnach, czy jakies dane nie uciekly itp. ladujemy do modelow danych no ot tyle
+Jak sprawdzić, czy dane zostały poprawnie załadowane?
